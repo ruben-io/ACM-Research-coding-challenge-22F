@@ -11,3 +11,11 @@ First I began with displaying the columns and number of rows followed by the hea
 <img src='Price_histogram.png' title='Price Histogram' width='' alt='' />
 
 <img src='model_mileage_boxplot.png' title='Boxplot of Models and their Mileage' width='' alt='' />
+
+## Sources Used
+
+https://sparkbyexamples.com/python-pandas-tutorial-for-beginners/
+
+https://bobbyhadz.com/blog/python-nameerror-name-df-is-not-defined#:~:text=The%20Python%20%22NameError%3A%20name%20',df%20variable%20before%20accessing%20it.
+
+https://realpython.com/pandas-groupby/
