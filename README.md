@@ -10,4 +10,4 @@ First I began with displaying the columns and number of rows followed by the hea
 
 <img src='Price_histogram.png' title='Price Histogram' width='' alt='' />
 
-<img src='model_mileage_boxplot' title='Boxplot of Models and their Mileage' width='' alt='' />
+<img src='model_mileage_boxplot.png' title='Boxplot of Models and their Mileage' width='' alt='' />
