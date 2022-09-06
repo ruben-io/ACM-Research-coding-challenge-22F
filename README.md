@@ -1,24 +1,12 @@
 # ACM Research coding challenge (Fall 2022)
 
-Note: if it's getting down to the deadline (September 5th at 11:59 CT) and you don't think you will be able to submit your project on time, just [submit](http://apply.acmutd.co/research-coding-challenge) whatever you have!
+## Summary of the Problem
+I am relatively new to working with Kaggle Datasets in a Data Science setting, I previously had some experience in CS 4395 Human Language Technologies course. In there I learned about Natural Language Processing and used some of the libraries I used in this project. A for the Probelm I wanted to solve, I was going for an all around exploration of the data. The beginning was more basic commands and visualations of the data and I worked my way up to displaying it in a box plot and histogram.
 
-This semester's challenge is especially open-ended. [Here is a dataset](https://www.kaggle.com/datasets/chancev/carsforsale) on Kaggle called "CarsForSale". It contains data scraped from the online car marketplace Cars.com. Each row contains 25 pieces of information about a car's listing, such as its price, year, model, and color.
-
-The challenge is to do *something interesting* with the data. Can you find a pattern, answer a question, or create a visualization? In case nothing comes to mind, here are some ideas, with varying complexity:
-
-- What qualities about a car do buyers seem to value the most?
-- Make a graph to visualize the most popular car models over time.
-- What colors of cars are most expensive?
+##Process of Analyzing the Data
+First I began with displaying the columns and number of rows followed by the head of the data. This was my way of "starting off small to make sure I could print basic data sections. Next I decided to make a function called return_counter that takes as input a data frame, column name, and limit. When called, it prints a dictionary of categorical values and how frequently they appear. I used it to print the 5 most common Makes from the data. Next I used it to get the 5 most common Years and lastly the 5 most common Exterior Colors. Next I defined a dictionary df_d1 and printed it to give me all the Years of all the Toyota cars in the dataset. Next I used the same dictionary to print the 5 most common years for Toyota vehicles. Lastly I used it to get the 5 most common Exteriro Colors of Toyota Vehicles. Next I defined a function return_statistics function that takes a data frame, a categorical column, and a numerical column. The mean and standard deviation of the numerical column for each category is stored in a data frame and the data frame is sorted in descending order according to the mean. I then used that function with the Categorical Column as 'Model' and the Numerical Column as 'Mileage'. It then outputs 15 Models and their mean Mileage and the standard deviation of the mileage as well respectively. Next I defined a function called get_boxplot_of_categories that function takes a data frame, categorical column, and numerical column and displays boxplots for the most common categories based on the limit. The input for the Categorical Column was 'Model' and the input Numerical Column 'Mileage'. Lastly I defined a function get_histogram that takes a data frame and a numerical column as input and displays a histogram. I called the function with the data frame and generated a histogram from ‘Price’. That completes all of my visualizations of the data. 
+- Do different brands try to appeal to people looking for different thin
 - Do different brands try to appeal to people looking for different things?
-- Come up with your own algorithm to figure out how good of a deal a listing is and compare it to the one in the dataset (`DealType`).
-- Use [cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis) to group the cars into categories.
-- How do people's taste in cars differ between states?
-- Train a machine learning model to predict some aspect of a car based on other information from its listing.
-
-However, we strongly encourage you to come up with your own problem to solve!
-
-You can use any programming language, framework, or library you want, but we recommend [creating a notebook in Kaggle](https://www.kaggle.com/docs/notebooks) and using Python. This will run in your browser, interlaces code with documentation, allows you to import the CarsForSale dataset easily by pressing the "Add data" button, and gives you access to Python's high-quality, high-level libraries for working with data. [Learn more about data science in Python.](https://www.w3schools.com/datascience/ds_python.asp)
-
 ## How to submit your solution
 
 1. [Create a **public** fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repository and name it  `ACM-Research-coding-challenge-22F` (click the "Fork" button in the top right).
